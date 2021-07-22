@@ -11,33 +11,87 @@
 </head>
 
 <body>
-
-    <div aling="center">
-        <img src="imagen/FZQAgwnYcFQ.jpg" width="150" height="200">
-        <h1 aling="left">Olga Kucheiko</h1>
-        <p>KucheikoOlga@gmail.com</p>
-        <p>
+<header>
+    <div align="left">
+        
+ 
+        <h1><img src="imagen/FZQAgwnYcFQ.jpg" alt="" width="150" height="200">   Olga Kucheiko</h1>
+        <p>e-mail: <em>KucheikoOlga@gmail.com</em></p>
+        <p>GitHub: <em>OlgaShebeda</em></p>
+    </div>
+</header>
+<main>
+      <div>
+          <h3>Details</h3>
+        <p class="tab">
             I am a passionnate and fast learner willing to start a career in IT. I have experience teaching information
             technology at Brest college for about a year. The technology stack included C#, Excel, and Java.
             Moreover, I have good written and verbal communication skills. I have the ability to communicate effectively
             in both independent and team environments.
         </p>
+      </div>
+
+       <div>
+           <h3>Skills</h3>
         <ul>
             <li>C#</li>
             <li>CSS</li>
+            <li>HTML</li>
             <li>Java</li>
             <li>SQL</li>
             <li>MySQL</li>
             <li>Git</li>
         </ul>
-        <p>thesis papers, coursework</p>
+        </div>
+     <section>
+         <h3>Code</h3>
+         <p>Part of the code from the course work in C# implementing the Gaussian method.</p>
+         <code class="tab">
+            public GausMethod(uint Row, uint Colum)<br>
+            {<br>
+                RightPart = new double[Row];<br>
+                Answer = new double[Row];<br>
+                Matrix = new double[Row][];<br>
+                for (int i = 0; i < Row; i++)<br>
+                    Matrix[i] = new double[Colum];<br>
+                RowCount = Row;<br>
+                ColumCount = Colum;<br>
+    
+                //обнулим массив<br>
+                for (int i = 0; i < Row; i++)<br>
+                {<br>
+                    Answer[i] = 0;<br>
+                    RightPart[i] = 0;<br>
+                    for (int j = 0; j < Colum; j++)<br>
+                        Matrix[i][j] = 0;<br>
+                }<br>
+            }
+         </code>
+         <p>The full version can be viewed at the 
+             <a href="https://github.com/OlgaShebeda/Coursework/blob/Methods/Math%D0%A1alculator.Domain/Methods/GausMethod.cs">link.</a>
+        </p>
+     </section>
+
+     <div>
+        <h3>Employment history</h3>
+        <p>Teacher at College of Business and Law, Brest</p>
+        <p>Thesis papers, coursework</p>
+
+        <h3>Education</h3>
         <p>Master, Brest State University, Brest</p>
-        <p>A1</p>
+
+        <h3>English</h3>
+        <p>A1</p> 
     </div>
+</main>
+  
     <footer>
-        <a href="//github.com/OlgaShebeda/RsScool-cv">GitHub</a>
-        <a href="https://rs.school/js/" >https://rs.school/js/</a>
+        <div class="align">
+        <p><a href="//github.com/OlgaShebeda/RsScool-cv">GitHub</a></p>
+        
+        <a href="https://rs.school/js/" >app rs school</a>
         <p aling="center">2021</p>
+        </div>
     </footer>
 
 </body>
